@@ -27,7 +27,7 @@ publicKey.pem
 /scripts/open_terminals/remote_endpoints_*
 /tensorflow-env/*
 /orderlesschain-experiments-archive/*
-./idea/*
+.idea/*
 
 ###################################################
 # General gitignore for the used technologiels
@@ -125,7 +125,7 @@ terraform.rc
 #.idea/csv-plugin.xml
 
 # Generated files
-.idea/**/contentModel.xml
+#.idea/**/contentModel.xml
 
 # Sensitive or high-churn files
 #.idea/**/dataSources/
