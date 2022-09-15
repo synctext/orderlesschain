@@ -114,23 +114,23 @@ clean-all: check-environment
 	@rm -rf ${CLIENT_BUILD_PATH_DARWIN}
 
 .PHONY: git-commit
-## git-commit: pull from master and push to master
+## git-commit: pull from main and push to main
 git-commit:
 	@echo "Commit"
 	@git add . ; git commit -m 'auto push';
 
 .PHONY: git-push
-## git-push: push to master
+## git-push: push to main
 git-push:
-	@echo "Pushing to git master"
+	@echo "Pushing to git main"
 	@git add . ; git commit -m 'auto push'; \
-		git push origin master
+		git push origin main
 
 .PHONY: git-pull
-## git-pull: pull from master
+## git-pull: pull from main
 git-pull:
-	@echo "Pulling from git master"
-	@git pull origin master
+	@echo "Pulling from git main"
+	@git pull origin main
 
 .PHONY: protos
 ## protos: generate the protos
