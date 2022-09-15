@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#echo "Deploying the nodes and the clients to the deployed OpenStack cluster ..."
+#echo "Deploying the nodes and the clients to the deployed cluster ..."
 
 source "${PROJECT_ABSOLUTE_PATH}"/env
 start=$(date +%s)
