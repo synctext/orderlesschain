@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  orderer:
+    build: .
+    ports:
+      - "9000:9000"
+      - "6060:6060"
+    volumes:
+      - ~/orderer/logs:/orderer/logs
+      - ~/orderer/data:/orderer/data
+      - ~/orderer/configs:/orderer/configs

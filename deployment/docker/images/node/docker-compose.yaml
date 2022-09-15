@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  node:
+    build: .
+    ports:
+      - "9000:9000"
+      - "9003:9003"
+      - "6060:6060"
+    volumes:
+      - ~/node/logs:/node/logs
+      - ~/node/data:/node/data
+      - ~/node/configs:/node/configs

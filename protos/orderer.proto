@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package protos;
+option go_package = "./;protos";
+
+import "transaction.proto";
+import "shared.proto";
+
+message BlockEventSubscription {
+    string node_id = 1;
+}
+
+message TransactionOrdererResponse {
+    string transaction_id = 1;
+    enum TransactionOrdererStatus {
+        ORDERED = 0;
+        FAILED = 1;
+    }
+    TransactionOrdererStatus status = 2;
+    string orderer_id = 3;
+}
+
+service OrdererService {
+    rpc CommitFabricAndFabricCRDTTransactionStream (stream protos.Transaction) returns (Empty);
+    rpc StopAndGetProfilingResult (Profiling) returns (stream ProfilingResult);
+
+    rpc SubscribeBlocks (BlockEventSubscription) returns (stream Block);
+    rpc ChangeModeRestart (OperationMode) returns (Empty);
+}
