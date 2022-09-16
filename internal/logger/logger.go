@@ -24,13 +24,13 @@ func init() {
 	}
 	// !!!! This deletes the log with every restart
 	err := os.RemoveAll(LogsPath)
-	if err != nil {
-		log.Fatal(err)
-	}
-	err = os.Mkdir(LogsPath, os.ModePerm)
-	if err != nil {
-		log.Fatal(err)
-	}
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//err = os.Mkdir(LogsPath, os.ModePerm)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
 	logFile, err := os.OpenFile(LogsPath+"log.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, os.ModePerm)
 	if err != nil {
 		log.Fatal(err)
