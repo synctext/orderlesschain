@@ -2,7 +2,7 @@
 
 Paper: [OrderlessChain: Do Permissioned Blockchains Need Total Global Order of Transactions?](https://arxiv.org/abs/2210.01477)
 
-Intruction on building: [Link](https://gitlab.com/orderlesschain/orderlesschain/-/blob/main/docs/build.md)
+Instruction on building: [Link](https://gitlab.com/orderlesschain/orderlesschain/-/blob/main/docs/build.md)
 
 Smart contracts for OrderlessChain, Fabirc and FabricCRDT: [Link](https://gitlab.com/orderlesschain/orderlesschain/-/tree/main/contractsbenchmarks/contracts)
 
